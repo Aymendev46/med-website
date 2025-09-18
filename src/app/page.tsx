@@ -40,9 +40,9 @@ const experiencePillars = [
 ];
 
 const galleryItems = [
-  { src: "/interior.jpg", alt: "Salle du restaurant", caption: "L’élégance d’une villa oranaise" },
+  /*{ src: "/interior.jpg", alt: "Salle du restaurant", caption: "L’élégance d’une villa oranaise" },*/
   { src: "/paella_royale.jpg", alt: "Paella", caption: "Notre paella royale aux fruits de mer" },
-  { src: "/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg", alt: "Tagine traditionnel", caption: "Tajine parfumé aux épices et légumes du marché" },
+  /*{ src: "/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg", alt: "Tagine traditionnel", caption: "Tajine parfumé aux épices et légumes du marché" },*/
   { src: "/WhatsApp Image 2025-09-18 at 15.06.27_9b40226a.jpg", alt: "Couscous royal", caption: "Couscous aux sept légumes, servi à l’algérienne" },
   { src: "/WhatsApp Image 2025-09-18 at 15.06.28_4a695c78.jpg", alt: "Pâtisseries algériennes", caption: "Sélection de douceurs au miel et aux amandes" },
   { src: "/WhatsApp Image 2025-09-18 at 15.06.28_9e3ea3f3.jpg", alt: "Salle du restaurant", caption: "Ambiance du Méditerranéen By OH" },
