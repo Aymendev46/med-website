@@ -73,7 +73,7 @@ export default function Home() {
         <div className="container-wide flex flex-wrap items-center gap-x-6 gap-y-4 py-4">
           <Link href="#accueil" className="flex items-center gap-3">
             <Image
-              src="/logo.svg"
+              src="/logo.jpg"
               alt="Le Méditerranéen By OH"
               width={58}
               height={58}
