@@ -10,13 +10,23 @@ body {
   @apply font-sans text-base leading-relaxed;
   color: #2f2b27;
   background-color: #0080ff1f;
-  /*background-image: radial-gradient(circle at top left, rgba(0, 128, 255, 0.14), transparent 55%),
+  background-image: radial-gradient(circle at top left, rgba(0, 128, 255, 0.14), transparent 55%),
     radial-gradient(circle at bottom right, rgba(18, 60, 105, 0.08), transparent 50%);
-  min-height: 100vh;*/
+  min-height: 100vh;
 }
 
 section {
-  @apply py-16 lg:py-24;
+  @apply py-12;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
 }
 
 h1,
