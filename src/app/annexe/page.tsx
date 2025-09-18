@@ -5,10 +5,18 @@ import { CalendarCheck, Check, MapPin, Phone } from "lucide-react";
 const amenities = [
   "Deux salles entièrement modulables (20 et 40 convives)",
   "Équipement audiovisuel premium (mur LED, sonorisation, micros HF)",
-  "Menu business sur-mesure signé par le Chef Omar H.",
+  "Menu business sur-mesure signé par le Méditerranèen.",
   "Brigade dédiée, accueil voiturier et conciergerie",
   "Possibilité de traduction simultanée et captation vidéo",
 ];
+
+// Use a cleaned amenities list without chef mention
+const amenitiesClean = amenities.map((item) =>
+  item.replace(
+    "Menu business sur-mesure sign� par le Chef Omar H.",
+    "Menu business sur-mesure pr�par� par notre brigade"
+  )
+);
 
 const phoneNumber = "+213 541 00 11 22";
 const phoneHref = "tel:+213541001122";

@@ -154,7 +154,7 @@ export default function Home() {
                 <div className="mt-10 flex flex-col gap-4">
                   <a
                     href={phoneHref}
-                    className="inline-flex items-center gap-2 rounded-full bg-coral px-0 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
+                    className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
                   >
                     <Phone size={18} />
                     Réserver par téléphone
@@ -415,7 +415,7 @@ export default function Home() {
               </p>
               <a
                 href={phoneHref}
-                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-ocean px-0 py-4 text-lg font-semibold text-black shadow-lg shadow-ocean/30 hover:bg-midnight"
+                className="mt-8 border-2 border-solid inline-flex items-center gap-3 rounded-2xl bg-ocean px-6 py-4 text-lg font-semibold text-black shadow-lg shadow-ocean/30 hover:bg-midnight"
               >
                 <Phone size={20} />
                 {phoneNumber}
@@ -452,9 +452,9 @@ export default function Home() {
                   />
                   <button
                     type="submit"
-                    className="rounded-full bg-coral px-4 py-3 text-sm font-semibold text-white hover:bg-coral/90"
+                    className="rounded-full bg-coral px-4 py-3 text-sm font-semibold border border-ocean/30 bg-white hover:bg-coral/90"
                   >
-                    Ok
+                    &gt;
                   </button>
                 </form>
                 <div className="mt-4 flex items-center gap-4 text-ocean">
