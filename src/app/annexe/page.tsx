@@ -19,13 +19,13 @@ export default function AnnexPage() {
       <section className="relative overflow-hidden pb-24 pt-28">
         <div className="absolute inset-0">
           <Image
-            src="/interior.jpg"
+            src="/paella_royale.jpg"
             alt="Salle de conférence"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-midnight/80" />
+          <div className="absolute inset-0 bg-[#222]/55" />
         </div>
         <div className="container-wide relative z-10 text-white">
           <Link href="/" className="inline-flex items-center text-sm uppercase tracking-[0.35em] text-champagne/80">
@@ -74,16 +74,16 @@ export default function AnnexPage() {
           <div className="grid gap-4">
             <div className="grid-card overflow-hidden">
               <div className="relative aspect-[4/3]">
-                <Image src="/hero.jpg" alt="Cocktail d’accueil" fill className="object-cover" />
+                <Image src="/au_miel.jpg" alt="Plat d'accueil" fill className="object-cover" />
               </div>
               <div className="p-6 text-sm text-graphite/70">
-                <strong className="font-serif text-ocean">Cocktail de bienvenue</strong>
-                <p className="mt-2">Ateliers mixologie, bouchées chaudes et accords champagnes.</p>
+                <strong className="font-serif text-ocean">Les douceurs de bienvenue</strong>
+                <p className="mt-2">Sélection de douceurs au miel et aux amandes</p>
               </div>
             </div>
             <div className="grid-card overflow-hidden">
               <div className="relative aspect-[4/3]">
-                <Image src="/paella.jpg" alt="Paella royale" fill className="object-cover" />
+                <Image src="/paella_royale.jpg" alt="Paella royale" fill className="object-cover" />
               </div>
               <div className="p-6 text-sm text-graphite/70">
                 <strong className="font-serif text-ocean">Signature culinaire</strong>
