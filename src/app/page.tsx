@@ -74,7 +74,7 @@ export default function Home() {
           <Link href="#accueil" className="flex items-center gap-3">
             <Image
               src="/logo.svg"
-              alt="Le Méditerranéen Oran"
+              alt="Le Méditerranéen By OH"
               width={58}
               height={58}
               priority
@@ -85,7 +85,7 @@ export default function Home() {
                 Le Méditerranéen
               </span>
               <span className="block font-serif text-xl md:text-2xl text-ocean">
-                Oran
+                By OH
               </span>
             </div>
           </Link>
@@ -379,7 +379,7 @@ export default function Home() {
               </p>
               <a
                 href={phoneHref}
-                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-ocean px-6 py-4 text-lg font-semibold text-white shadow-lg shadow-ocean/30 hover:bg-midnight"
+                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-ocean px-6 py-4 text-lg font-semibold text-black shadow-lg shadow-ocean/30 hover:bg-midnight"
               >
                 <Phone size={20} />
                 {phoneNumber}
@@ -447,7 +447,7 @@ export default function Home() {
 
       <footer className="border-t border-white/60 bg-sand/90">
         <div className="container-wide flex flex-col gap-6 py-8 text-sm text-graphite/70 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Le Méditerranéen Oran</p>
+          <p>© {new Date().getFullYear()} Le Méditerranéen By OH</p>
           <div className="flex flex-wrap gap-6">
             <Link href="/annexe" className="hover:text-ocean">
               Annexe conférences
