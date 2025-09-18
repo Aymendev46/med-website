@@ -36,8 +36,7 @@ export default function AnnexPage() {
               L’annexe du Méditerranéen - Vos dîners conférences sur mesure
             </h1>
             <p className="mt-6 text-lg text-champagne/90">
-              Deux salles de conférence élégantes pour les entreprises et maisons souhaitant conjuguer prise de parole
-              et gastronomie. Notre équipe imagine des scénographies mémorables, du cocktail d’accueil aux accords mets & vins.
+              Deux salles de conférence élégantes pour les entreprises et maisons souhaitant conjuguer prise de parole et gastronomie. Notre équipe imagine des scénographies mémorables, alliant accueil soigné et expériences culinaires raffinées.
             </p>
             <a
               href={phoneHref}
@@ -58,9 +57,7 @@ export default function AnnexPage() {
               Deux salles, deux ambiances pour accueillir vos dîners conférences
             </h2>
             <p>
-              « La Vigie » (40 couverts) offre une scène surélevée idéale pour les lancements et présentations produit.
-              « L’Atlantide » (20 couverts) se prête aux conseils d’administration et rencontres confidentielles.
-              Toutes deux bénéficient de la cuisine gastronomique du Chef Omar H. et d’une équipe dédiée.
+              « La Vigie » (40 couverts) offre une scène surélevée idéale pour les lancements et présentations produit. « L’Atlantide » (20 couverts) se prête aux conseils d’administration et rencontres confidentielles. Ces deux salles de conférence, situées au sein du restaurant Le Méditerranéen, bénéficient d’une restauration soignée et d’une équipe dédiée.
             </p>
             <ul className="space-y-3 text-sm text-graphite/85">
               {amenities.map((item) => (
