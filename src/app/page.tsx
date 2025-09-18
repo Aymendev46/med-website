@@ -260,8 +260,13 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="grid-card overflow-hidden">
-                <div className="relative aspect-square">
-                  <Image src="/paella_royale.jpg" alt="Paella royale" fill className="object-fit md:object-left" />
+                <div className="relative h-full">
+                  <Image
+                    src="/paella_royale.jpg"
+                    alt="Paella royale"
+                    fill
+                    className="object-cover object-center"
+                  />
                 </div>
               </div>
               <div className="grid gap-4">
