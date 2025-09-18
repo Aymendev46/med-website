@@ -120,7 +120,7 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="pt-20 lg:pt-24">
+        <section className="pt-10 lg:pt-12">
           <div className="container-wide grid items-center gap-12 lg:grid-cols-[1.05fr_0.85fr]">
             <div className="grid-card relative overflow-hidden">
               <div className="absolute inset-0">
@@ -154,17 +154,17 @@ export default function Home() {
                     Ouvert du mardi au dimanche - 12h - 23h
                   </span>
                 </div>
-                <div className="mt-10 flex flex-wrap gap-4">
+                <div className="mt-10 flex flex-col gap-4">
                   <a
                     href={phoneHref}
-                    className="inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
+                    className="inline-flex items-center gap-2 rounded-full bg-coral px-0 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
                   >
                     <Phone size={18} />
                     Réserver par téléphone
                   </a>
                   <Link
                     href="#specialites"
-                    className="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/20"
+                    className="inline-flex items-center max-w-48 text-center justify-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/20"
                   >
                     Découvrir la carte
                   </Link>
@@ -379,7 +379,7 @@ export default function Home() {
               </p>
               <a
                 href={phoneHref}
-                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-ocean px-6 py-4 text-lg font-semibold text-black shadow-lg shadow-ocean/30 hover:bg-midnight"
+                className="mt-8 inline-flex items-center gap-3 rounded-2xl bg-ocean px-0 py-4 text-lg font-semibold text-black shadow-lg shadow-ocean/30 hover:bg-midnight"
               >
                 <Phone size={20} />
                 {phoneNumber}

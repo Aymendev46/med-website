@@ -16,11 +16,11 @@ const body = Manrope({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://le-mediterraneen.vercel.app"),
-  title: "Le Méditerranéen By OH | Restaurant gastronomique à Oran",
+  title: "Le Méditerranéen | Restaurant gastronomique à Oran",
   description:
-    "Le Méditerranéen By OH propose une expérience culinaire haut de gamme mêlant héritage algérien et inspiration méditerranéenne dans un cadre d'exception à Oran.",
+    "Le Méditerranéen propose une expérience culinaire haut de gamme mêlant héritage algérien et inspiration méditerranéenne dans un cadre d'exception à Oran.",
   openGraph: {
-    title: "Le Méditerranéen By OH",
+    title: "Le Méditerranéen",
     description:
       "Une adresse d'exception à Oran : cuisine méditerranéenne raffinée, produits frais et héritage algérien.",
     locale: "fr_FR",
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Le Méditerranéen By OH",
+    title: "Le Méditerranéen",
     description:
       "Découvrez une table d'exception à Oran où la Méditerranée rencontre l'élégance algérienne.",
   },
   alternates: {
-    canonical: "https://le-mediterraneen.vercel.app",
+    canonical: "https://www.lemediterraneen-oran.com/",
   },
 };
 
