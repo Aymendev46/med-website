@@ -1,0 +1,33 @@
+<svg width="220" height="260" viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wheel" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#1d3f62" />
+      <stop offset="100%" stop-color="#10273c" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(10 10)">
+    <circle cx="100" cy="100" r="68" fill="none" stroke="url(#wheel)" stroke-width="10" />
+    <circle cx="100" cy="100" r="24" fill="none" stroke="#1d3f62" stroke-width="8" />
+    <g stroke="#1d3f62" stroke-width="10" stroke-linecap="round">
+      <line x1="100" y1="6" x2="100" y2="32" />
+      <line x1="100" y1="168" x2="100" y2="194" />
+      <line x1="6" y1="100" x2="32" y2="100" />
+      <line x1="168" y1="100" x2="194" y2="100" />
+      <line x1="32" y1="32" x2="50" y2="50" />
+      <line x1="150" y1="150" x2="168" y2="168" />
+      <line x1="32" y1="168" x2="50" y2="150" />
+      <line x1="150" y1="50" x2="168" y2="32" />
+    </g>
+    <path
+      d="M60 100c20-26 70-42 90-16-14 0-22 5-26 9 0 0 10 4 14 11-12 20-42 36-74 20l-12 10c-1-9 1-19 4-28z"
+      fill="#1d3f62"
+    />
+    <circle cx="136" cy="96" r="5" fill="#f7f1e8" />
+  </g>
+  <text x="110" y="225" text-anchor="middle" font-family="'Playfair Display', serif" font-size="26" letter-spacing="0.48em" fill="#1d3f62">
+    LE MÉDITERRANÉEN
+  </text>
+  <text x="110" y="250" text-anchor="middle" font-family="'Playfair Display', serif" font-size="28" letter-spacing="0.35em" fill="#1d3f62">
+    ORAN
+  </text>
+</svg>
