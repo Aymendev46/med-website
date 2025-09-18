@@ -41,7 +41,7 @@ const experiencePillars = [
 
 const galleryItems = [
   { src: "/interior.jpg", alt: "Salle du restaurant", caption: "L’élégance d’une villa oranaise" },
-  { src: "/paella.jpg", alt: "Paella", caption: "Notre paella royale aux fruits de mer" },
+  { src: "/paella_royale.jpg", alt: "Paella", caption: "Notre paella royale aux fruits de mer" },
   { src: "/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg", alt: "Tagine traditionnel", caption: "Tajine parfumé aux épices et légumes du marché" },
   { src: "/WhatsApp Image 2025-09-18 at 15.06.27_9b40226a.jpg", alt: "Couscous royal", caption: "Couscous aux sept légumes, servi à l’algérienne" },
   { src: "/WhatsApp Image 2025-09-18 at 15.06.28_4a695c78.jpg", alt: "Pâtisseries algériennes", caption: "Sélection de douceurs au miel et aux amandes" },
@@ -261,18 +261,18 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="grid-card overflow-hidden">
                 <div className="relative aspect-square">
-                  <Image src="/paella.jpg" alt="Paella royale" fill className="object-cover md:object-left" />
+                  <Image src="/paella_royale.jpg" alt="Paella royale" fill className="object-fit md:object-left" />
                 </div>
               </div>
               <div className="grid gap-4">
                 <div className="grid-card overflow-hidden">
                   <div className="relative aspect-[4/5]">
-                    <Image src="/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg" alt="Atelier de cuisine algérienne" fill className="object-cover" />
+                    <Image src="/paella_r_alt.jpg" alt="Atelier de cuisine algérienne" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="grid-card overflow-hidden">
                   <div className="relative aspect-[4/5]">
-                    <Image src="/WhatsApp Image 2025-09-18 at 15.06.28_4a695c78.jpg" alt="Pâtisseries algériennes" fill className="object-cover" />
+                    <Image src="/paela.jpg" alt="Pâtisseries algériennes" fill className="object-cover" />
                   </div>
                 </div>
               </div>
