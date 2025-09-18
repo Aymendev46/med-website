@@ -42,7 +42,10 @@ const experiencePillars = [
 const galleryItems = [
   { src: "/interior.jpg", alt: "Salle du restaurant", caption: "L’élégance d’une villa oranaise" },
   { src: "/paella.jpg", alt: "Paella", caption: "Notre paella royale aux fruits de mer" },
-  { src: "/dessert.jpg", alt: "Dessert méditerranéen", caption: "Douceurs inspirées des rivages méditerranéens" },
+  { src: "/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg", alt: "Tagine traditionnel", caption: "Tajine parfumé aux épices et légumes du marché" },
+  { src: "/WhatsApp Image 2025-09-18 at 15.06.27_9b40226a.jpg", alt: "Couscous royal", caption: "Couscous aux sept légumes, servi à l’algérienne" },
+  { src: "/WhatsApp Image 2025-09-18 at 15.06.28_4a695c78.jpg", alt: "Pâtisseries algériennes", caption: "Sélection de douceurs au miel et aux amandes" },
+  { src: "/WhatsApp Image 2025-09-18 at 15.06.28_9e3ea3f3.jpg", alt: "Salle du restaurant", caption: "Ambiance du Méditerranéen By OH" },
   ];
 
 const testimonials = [
@@ -220,8 +223,8 @@ export default function Home() {
                 </div>
                 <div className="rounded-2xl bg-white/80 p-6 shadow-card">
                   <h3 className="text-sm uppercase tracking-[0.25em] text-ocean">Expérience</h3>
-                  <p className="mt-2 text-2xl font-serif">Chef Omar H.</p>
-                  <span className="text-xs text-graphite/70">30 ans de gastronomie algérienne</span>
+                  <p className="mt-2 text-2xl font-serif">Cuisine signature</p>
+                  <span className="text-xs text-graphite/70">Cheffe de brigade formée à travers la Méditerranée</span>
                 </div>
               </div>
             </div>
@@ -243,9 +246,9 @@ export default function Home() {
                 Chaque service se prépare à la commande pour préserver le croquant du socarrat.
               </p>
               <ul className="grid gap-3 text-sm text-graphite/80">
-                <li>• Préparation minute pour 2 à 6 convives</li>
-                <li>• Option « Dakhla » avec homard bleu et boutargue</li>
-                <li>• Service de thé à la menthe et boissons maison</li>
+                <li>&bull; Préparation minute pour 2 à 6 convives</li>
+                <li>&bull; Option « Dakhla » avec homard bleu et boutargue</li>
+                <li>&bull; Service de thé à la menthe et boissons maison</li>
               </ul>
               <Link
                 href="#contact"
@@ -258,18 +261,18 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div className="grid-card overflow-hidden">
                 <div className="relative aspect-square">
-                  <Image src="/paella.jpg" alt="Paella royale" fill className="object-cover" />
+                  <Image src="/paella.jpg" alt="Paella royale" fill className="object-cover md:object-left" />
                 </div>
               </div>
               <div className="grid gap-4">
                 <div className="grid-card overflow-hidden">
                   <div className="relative aspect-[4/5]">
-                    <Image src="/dessert.jpg" alt="Dessert au safran" fill className="object-cover" />
+                    <Image src="/WhatsApp Image 2025-09-18 at 15.06.27_3f1a0df0.jpg" alt="Atelier de cuisine algérienne" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="grid-card overflow-hidden">
                   <div className="relative aspect-[4/5]">
-                    <Image src="/wine.jpg" alt="Cave méditerranéenne" fill className="object-cover" />
+                    <Image src="/WhatsApp Image 2025-09-18 at 15.06.28_4a695c78.jpg" alt="Pâtisseries algériennes" fill className="object-cover" />
                   </div>
                 </div>
               </div>
@@ -295,6 +298,40 @@ export default function Home() {
                   <div className="mt-6 h-1 w-16 rounded-full bg-coral/70" />
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="traditions" className="bg-white/60">
+          <div className="container-wide grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
+            <div className="space-y-6">
+              <span className="text-xs uppercase tracking-[0.35em] text-ocean">Patrimoine</span>
+              <h2 className="text-3xl md:text-4xl">Les plats traditionnels algériens</h2>
+              <p>
+                Depuis ses débuts, la maison célèbre la richesse culinaire de notre terre. Couscous parfumé, chorba légère, tajines aux fruits secs et bricks croustillantes rythment nos menus selon les saisons et l’inspiration du marché oranais.
+              </p>
+              <p>
+                Chaque recette est préparée selon les gestes hérités des familles algériennes : cuisson lente, épices torréfiées sur place, semoule roulée à la main et généreuses garnitures de légumes du littoral.
+              </p>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="grid-card p-6">
+                  <h3 className="font-serif text-xl text-ocean">Heritage &amp; partage</h3>
+                  <p className="mt-3 text-sm text-graphite/80">
+                    Servis sur de grands plats à partager, nos mets réunissent familles et amis autour de la même table.
+                  </p>
+                </div>
+                <div className="grid-card p-6">
+                  <h3 className="font-serif text-xl text-ocean">Produits du terroir</h3>
+                  <p className="mt-3 text-sm text-graphite/80">
+                    Huile d’olive de Sig, miel de Tlemcen et dattes Deglet Nour apportent profondeur et douceur aux recettes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="grid-card overflow-hidden">
+              <div className="relative aspect-[4/5]">
+                <Image src="/WhatsApp Image 2025-09-18 at 15.06.28_d28736c4.jpg" alt="Couscous traditionnel" fill className="object-cover" />
+              </div>
             </div>
           </div>
         </section>
