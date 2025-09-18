@@ -41,10 +41,9 @@ const experiencePillars = [
 
 const galleryItems = [
   { src: "/interior.jpg", alt: "Salle du restaurant", caption: "L’élégance d’une villa oranaise" },
-  { src: "/paella.jpg", alt: "Paella espagnole", caption: "Notre paella royale aux fruits de mer" },
+  { src: "/paella.jpg", alt: "Paella", caption: "Notre paella royale aux fruits de mer" },
   { src: "/dessert.jpg", alt: "Dessert méditerranéen", caption: "Douceurs inspirées des rivages méditerranéens" },
-  { src: "/wine.jpg", alt: "Sélection de vins", caption: "Cave d’exception et accords sur mesure" },
-];
+  ];
 
 const testimonials = [
   {
@@ -73,20 +72,14 @@ export default function Home() {
         <div className="container-wide flex flex-wrap items-center gap-x-6 gap-y-4 py-4">
           <Link href="#accueil" className="flex items-center gap-3">
             <Image
-              src="/logo.jpg"
-              alt="Le Méditerranéen By OH"
+              src="/Full-logo.svg"
+              alt="Le Méditerranéen"
               width={58}
               height={58}
               priority
               className="h-14 w-14"
             />
             <div>
-              <span className="block text-[10px] uppercase tracking-[0.35em] text-ocean">
-                Le Méditerranéen
-              </span>
-              <span className="block font-serif text-xl md:text-2xl text-ocean">
-                By OH
-              </span>
             </div>
           </Link>
 
@@ -125,17 +118,18 @@ export default function Home() {
             <div className="grid-card relative overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  src="/hero.jpg"
+                  src="/hero 1.png"
                   alt="Cuisine méditerranéenne"
                   fill
-                  className="object-cover"
+                  className="object-cover object-center md:object-left"
+                  sizes="(min-width: 1024px) 52vw, 100vw"
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-midnight/80 via-midnight/60 to-transparent" />
               </div>
               <div className="relative z-10 max-w-xl p-8 text-white md:p-12">
                 <p className="text-xs uppercase tracking-[0.4em] text-white/70">Restaurant Gastronomique</p>
-                <h1 className="mt-6 text-4xl leading-tight md:text-5xl text-white">Le Méditerranéen By OH</h1>
+                <h1 className="mt-6 text-4xl leading-tight md:text-5xl text-white">Le Méditerranéen</h1>
                 <p className="mt-6 text-white/85">
                   Une adresse d’exception à Oran, héritière de l’iconique Méditerranéen. Dans un décor somptueux, embarquez
                   pour un voyage culinaire où produits nobles et héritage algérien se rencontrent.
@@ -204,7 +198,7 @@ export default function Home() {
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl">Une histoire d’héritage vivant</h2>
               <p>
-                Le Méditerranéen By OH. Une adresse d’exception à Oran, pensée pour les fines bouches en quête d’une
+                Le Méditerranéen. Une adresse d’exception à Oran, pensée pour les fines bouches en quête d’une
                 expérience gastronomique unique. Dans un décor à couper le souffle, notre maison — digne héritière du
                 mythique Méditerranéen — vous invite à un voyage culinaire inoubliable.
               </p>
@@ -214,7 +208,7 @@ export default function Home() {
                 zeste d’héritage culinaire algérien, révélant la richesse et l’élégance de nos traditions.
               </p>
               <p>
-                Installé dans une somptueuse bâtisse oranaise, Le Méditerranéen By OH se veut plus qu’un restaurant : une
+                Installé dans une somptueuse bâtisse oranaise, Le Méditerranéen se veut plus qu’un restaurant : une
                 célébration de la gastronomie algérienne, qui pour nous n’est pas seulement un art, mais un héritage
                 vivant. Le partager avec vous est notre plus grand honneur.
               </p>
@@ -243,7 +237,7 @@ export default function Home() {
           <div className="container-wide grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="space-y-6">
               <span className="text-xs uppercase tracking-[0.4em] text-ocean">Signature</span>
-              <h2 className="text-3xl md:text-4xl">La paella royale espagnole</h2>
+              <h2 className="text-3xl md:text-4xl">La paella royale</h2>
               <p>
                 Une ode à nos voisins ibériques : riz bomba safrané, langoustines, coques, poulpe grillé et chorizo affiné.
                 Chaque service se prépare à la commande pour préserver le croquant du socarrat.
@@ -251,7 +245,7 @@ export default function Home() {
               <ul className="grid gap-3 text-sm text-graphite/80">
                 <li>• Préparation minute pour 2 à 6 convives</li>
                 <li>• Option « Dakhla » avec homard bleu et boutargue</li>
-                <li>• Accord mets & vins avec notre sommelier</li>
+                <li>• Service de thé à la menthe et boissons maison</li>
               </ul>
               <Link
                 href="#contact"
@@ -447,7 +441,7 @@ export default function Home() {
 
       <footer className="border-t border-white/60 bg-sand/90">
         <div className="container-wide flex flex-col gap-6 py-8 text-sm text-graphite/70 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Le Méditerranéen By OH</p>
+          <p>© {new Date().getFullYear()} Le Méditerranéen</p>
           <div className="flex flex-wrap gap-6">
             <Link href="/annexe" className="hover:text-ocean">
               Annexe conférences
