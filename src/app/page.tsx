@@ -287,7 +287,7 @@ export default function Home() {
                   </div>
                   <div className="grid-card overflow-hidden">
                     <div className="relative aspect-[4/3]">
-                      <Image src="/paella_royale.jpg" alt="Paella royale" fill className="object-cover" />
+                      <Image src="/paela.jpg" alt="Paella royale" fill className="object-cover" />
                     </div>
                     <div className="p-6 text-sm text-graphite/70">
                       <strong className="font-serif text-ocean">Signature culinaire</strong>
