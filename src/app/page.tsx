@@ -255,72 +255,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            {/* Details of the two conference rooms */}
-            <section>
-              <div className="container-wide grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
-                <div className="space-y-6">
-                  <span className="text-xs uppercase tracking-[0.35em] text-ocean">Votre événement</span>
-                  <h2 className="text-3xl md:text-4xl">
-                    Deux salles, deux ambiances pour accueillir vos dîners conférences
-                  </h2>
-                  <p>
-                    « La Vigie » (40 couverts) offre une scène surélevée idéale pour les lancements et présentations produit. « L’Atlantide » (20 couverts) se prête aux conseils d’administration et rencontres confidentielles. Ces deux salles de conférence, situées au sein du restaurant Le Méditerranéen, bénéficient d’une restauration soignée et d’une équipe dédiée.
-                  </p>
-                  <ul className="space-y-3 text-sm text-graphite/85">
-                    {conferenceAmenities.map((item) => (
-                      <li key={item} className="flex items-start gap-3">
-                        <Check className="mt-1 h-4 w-4 text-coral" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="grid gap-4">
-                  <div className="grid-card overflow-hidden">
-                    <div className="relative aspect-[4/3]">
-                      <Image src="/au_miel.jpg" alt="Plat d'accueil" fill className="object-cover" />
-                    </div>
-                    <div className="p-6 text-sm text-graphite/70">
-                      <strong className="font-serif text-ocean">Les douceurs de bienvenue</strong>
-                      <p className="mt-2">Sélection de douceurs au miel et aux amandes</p>
-                    </div>
-                  </div>
-                  <div className="grid-card overflow-hidden">
-                    <div className="relative aspect-[4/3]">
-                      <Image src="/paela.jpg" alt="Paella royale" fill className="object-cover" />
-                    </div>
-                    <div className="p-6 text-sm text-graphite/70">
-                      <strong className="font-serif text-ocean">Signature culinaire</strong>
-                      <p className="mt-2">La paella royale, préparée en live devant vos invités par la brigade.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            {/* Included services for conference events */}
-            <section className="bg-white/70">
-              <div className="container-wide grid gap-8 md:grid-cols-2">
-                <div className="grid-card p-8">
-                  <span className="text-xs uppercase tracking-[0.35em] text-ocean">Services inclus</span>
-                  <h2 className="mt-4 text-3xl md:text-4xl">Un accompagnement clé en main</h2>
-                  <p className="mt-4 text-graphite/80">
-                    Une équipe événementielle dédiée assure la coordination : brief initial, repérage technique, déroulé minute
-                    et présence le jour J. Nous orchestrons également vos moments artistiques (musique live, projections, discours).
-                  </p>
-                  <div className="mt-6 grid gap-4 text-sm text-graphite/80">
-                    <div className="rounded-2xl bg-white/80 p-4 shadow-card">
-                      <strong className="font-serif text-ocean">Logistique</strong>
-                      <p className="mt-1">Valet parking, signalétique personnalisée, hôtesses trilingues.</p>
-                    </div>
-                    <div className="rounded-2xl bg-white/80 p-4 shadow-card">
-                      <strong className="font-serif text-ocean">Technique</strong>
-                      <p className="mt-1">Mur LED 4K, captation multi-caméras, diffusion streaming sur demande.</p>
-                    </div>
-                  </div>
-                </div>
 
-              </div>
-            </section>
           </div>
         </section>
 
