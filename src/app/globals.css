@@ -31,8 +31,15 @@ section {
     padding-top: 1rem;
     padding-bottom: 6rem;
   }
+
   .min-w-screen {
     min-width: 100vw;
+  }
+}
+
+@media (max-width: 580px) {
+  section {
+    min-height: 70vh;
   }
 }
 
