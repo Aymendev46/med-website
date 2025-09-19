@@ -318,36 +318,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="grid-card p-8">
-                  <span className="text-xs uppercase tracking-[0.35em] text-ocean">Réserver</span>
-                  <h2 className="mt-4 text-3xl md:text-4xl">Privatisez votre date</h2>
-                  <p className="mt-4 text-graphite/80">
-                    Contactez notre concierge événementiel pour construire votre proposition.
-                    Un devis sur-mesure vous est envoyé en 24h.
-                  </p>
-                  <div className="mt-6 space-y-4 text-sm text-graphite/80">
-                    <div className="flex items-center gap-3">
-                      <Phone className="text-coral" size={18} />
-                      <a href={phoneHref} className="font-semibold text-ocean hover:text-midnight">
-                        {phoneNumber}
-                      </a>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <CalendarCheck className="text-coral" size={18} />
-                      <span>Mardi - Dimanche - 12h00 - 23h00 - Lundi sur privatisation</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <MapPin className="text-coral" size={18} />
-                      <span>Boulevard de l’Aurès, Oran</span>
-                    </div>
-                  </div>
-                  <Link
-                    href="mailto:evenements@lemediterraneen.dz"
-                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-graphite px-5 py-3 text-sm font-semibold text-sand hover:bg-ocean"
-                  >
-                    Demander un devis détaillé
-                  </Link>
-                </div>
+
               </div>
             </section>
           </div>
