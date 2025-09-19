@@ -22,10 +22,17 @@ section {
   align-items: center;
 }
 
+.min-w-screen {
+    min-width: 100vw;
+}
+
 @media (min-width: 1024px) {
   section {
     padding-top: 1rem;
     padding-bottom: 6rem;
+  }
+  .min-w-screen {
+    min-width: 100vw;
   }
 }
 

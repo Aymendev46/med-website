@@ -224,7 +224,7 @@ export default function Home() {
 
         {/* Conference section: inlined from the former annexe page */}
         <section id="conference">
-          <div className="relative isolate min-h-screen" id="annexe">
+          <div className="relative isolate min-h-screen min-w-screen" id="annexe">
             {/* Hero for the conference rooms */}
             <section className="relative overflow-hidden pb-24 pt-28">
               <div className="absolute inset-0">
