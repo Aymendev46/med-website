@@ -37,10 +37,10 @@ const navItems = [
 // mentioned a specific chef; it has been replaced with a neutral
 // reference to the brigade to keep the description focused on the
 // service rather than a person.
-const conferenceAmenities = [
+const amenities = [
   "Deux salles entièrement modulables (20 et 40 convives)",
   "Équipement audiovisuel premium (mur LED, sonorisation, micros HF)",
-  "Menu business sur‑mesure préparé par notre brigade.",
+  "Menu business sur-mesure signé par le Méditerranèen.",
   "Brigade dédiée, accueil voiturier et conciergerie",
   "Possibilité de traduction simultanée et captation vidéo",
 ];
@@ -238,36 +238,42 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[#222]/55" />
               </div>
               <div className="relative z-10 max-w-xl p-8 text-white md:p-12">
-                <p className="text-xs uppercase tracking-[0.4em] text-white/70">Restaurant Gastronomique</p>
-                <h1 className="mt-6 text-4xl leading-tight md:text-5xl text-white">Le Méditerranéen</h1>
-                <p className="mt-6 text-white/85">
-                  Une adresse d’exception à Oran, héritière de l’iconique Méditerranéen. Dans un décor somptueux, embarquez
-                  pour un voyage culinaire où produits nobles et héritage algérien se rencontrent.
-                </p>
-                <div className="mt-8 flex flex-wrap items-center gap-6 text-white/80">
-                  <span className="flex items-center gap-2 text-sm">
-                    <Clock size={18} />
-                    Ouvert du mardi au dimanche - 12h - 23h
-                  </span>
+                <div className="space-y-6">
+                  <h2 className="text-3xl md:text-4xl">L’annexe du Méditerranéen - Vos dîners conférences sur mesure</h2>
+                  <p>
+                    « La Vigie » (40 couverts) offre une scène surélevée idéale pour les lancements et présentations produit. « L’Atlantide » (20 couverts) se prête aux conseils d’administration et rencontres confidentielles. Ces deux salles de conférence, situées au sein du restaurant Le Méditerranéen, bénéficient d’une restauration soignée et d’une équipe dédiée.
+                  </p>
+                  <ul className="space-y-3 text-sm text-graphite/85">
+                    {amenities.map((item) => (
+                      <li key={item} className="flex items-start gap-3">
+                        <Check className="mt-1 h-4 w-4 text-coral" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="mt-10 flex flex-col gap-4">
-                  <a
-                    href={phoneHref}
-                    className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
-                  >
-                    <Phone size={18} />
-                    Réserver par téléphone
-                  </a>
-                  <Link
-                    href="#specialites"
-                    className="inline-flex items-center max-w-48 text-center justify-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/20"
-                  >
-                    Découvrir la carte
-                  </Link>
+              </div>
+            </div>
+            <div className="grid-card p-8">
+              <span className="text-xs uppercase tracking-[0.35em] text-ocean">Services inclus</span>
+              <h2 className="mt-4 text-3xl md:text-4xl">Un accompagnement clé en main</h2>
+              <p className="mt-4 text-graphite/80">
+                Une équipe événementielle dédiée assure la coordination : brief initial, repérage technique, déroulé minute
+                et présence le jour J. Nous orchestrons également vos moments artistiques (musique live, projections, discours).
+              </p>
+              <div className="mt-6 grid gap-4 text-sm text-graphite/80">
+                <div className="rounded-2xl bg-white/80 p-4 shadow-card">
+                  <strong className="font-serif text-ocean">Logistique</strong>
+                  <p className="mt-1">Valet parking, signalétique personnalisée, hôtesses trilingues.</p>
+                </div>
+                <div className="rounded-2xl bg-white/80 p-4 shadow-card">
+                  <strong className="font-serif text-ocean">Technique</strong>
+                  <p className="mt-1">Mur LED 4K, captation multi-caméras, diffusion streaming sur demande.</p>
                 </div>
               </div>
             </div>
           </div>
+          
         </section>
 
         {/* Presentation section describing the restaurant's heritage */}
