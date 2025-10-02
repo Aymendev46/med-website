@@ -91,8 +91,8 @@ const testimonials = [
 ];
 
 // Contact information reused throughout the site
-const phoneNumber = "+213 541 00 11 22";
-const phoneHref = "tel:+213541001122";
+const phoneNumber = "06 68018506 / 05 40753724";
+const phoneHref = "tel:0668018506";
 
 export default function Home() {
   return (
@@ -170,11 +170,11 @@ export default function Home() {
                   </span>
                   <span className="flex items-center gap-2 text-sm">
                     <MapPin size={18} />
-                    Boulevard de l’Aurès, Oran
+                    Bir El Djir , Oran en parallèle avec la 4ème rocade
                   </span>
                   <span className="flex items-center gap-2 text-sm">
                     <Clock size={18} />
-                    Ouvert du mardi au dimanche - 12h - 23h
+                    Ouvert du Samedu au Jeudi - du 11:30 vers 23:30
                   </span>
                 </div>
                 <div className="mt-10 flex flex-col gap-4">
@@ -183,14 +183,9 @@ export default function Home() {
                     className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
                   >
                     <Phone size={18} />
-                    Réserver par téléphone
+                    06 68018506 / 05 40753724
                   </a>
-                  <Link
-                    href="#specialites"
-                    className="inline-flex items-center max-w-48 text-center justify-center gap-2 rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white hover:bg-white/20"
-                  >
-                    Découvrir la carte
-                  </Link>
+
                 </div>
               </div>
             </div>
