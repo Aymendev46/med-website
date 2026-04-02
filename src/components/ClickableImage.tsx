@@ -35,7 +35,7 @@ export default function ClickableImage({ src, alt, containerClassName }: Clickab
         <X size={32} />
       </button>
 
-      <div className="relative w-full max-w-5xl aspect-[4/3] sm:aspect-video" onClick={(e) => e.stopPropagation()}>
+      <div className="relative w-[90vw] h-[85vh] sm:w-full sm:h-auto max-w-5xl sm:aspect-video" onClick={(e) => e.stopPropagation()}>
         <Image
           src={src}
           alt={alt}

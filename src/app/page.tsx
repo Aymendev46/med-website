@@ -280,6 +280,13 @@ export default function Home() {
               <div className="flex flex-col justify-between space-y-6">
                 <div>
                   <h2 className="text-3xl md:text-4xl">Une histoire d’héritage vivant</h2>
+                  <div className="mt-6 grid-card overflow-hidden lg:hidden">
+                    <ClickableImage 
+                      src="/description_picture.jpg" 
+                      alt="Intérieur du Méditerranéen" 
+                      containerClassName="relative h-[550px] w-full" 
+                    />
+                  </div>
                   <p className="mt-6">
                     Le Méditerranéen. Une adresse d’exception à Oran, pensée pour les fines bouches en quête d’une
                     expérience gastronomique unique. Dans un décor à couper le souffle, notre maison — digne héritière du
@@ -309,7 +316,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="grid-card overflow-hidden">
+              <div className="hidden lg:block grid-card overflow-hidden">
                 <ClickableImage 
                   src="/description_picture.jpg" 
                   alt="Intérieur du Méditerranéen" 
