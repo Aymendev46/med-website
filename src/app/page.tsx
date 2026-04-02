@@ -11,6 +11,8 @@ import {
   Phone,
   Star,
 } from "lucide-react";
+import ImageGallery from "../components/ImageGallery";
+import ClickableImage from "../components/ClickableImage";
 
 /*
  * This page consolidates the main restaurant landing page together with
@@ -26,8 +28,8 @@ import {
 const navItems = [
   { label: "Accueil", href: "#accueil" },
   { label: "Présentation", href: "#presentation" },
-  { label: "Carte", href: "#specialites" },
   { label: "Expérience", href: "#experience" },
+  { label: "Carte", href: "#specialites" },
   { label: "Galerie", href: "#galerie" },
   { label: "Avis", href: "#avis" },
   { label: "Contact", href: "#contact" },
@@ -91,8 +93,8 @@ const testimonials = [
 ];
 
 // Contact information reused throughout the site
-const phoneNumber = "06 68018506 / 05 40753724";
-const phoneHref = "tel:0668018506";
+const phoneNumber = "05 40753724";
+const phoneHref = "tel:0540753724";
 
 export default function Home() {
   return (
@@ -183,7 +185,7 @@ export default function Home() {
                     className="inline-flex items-center gap-2 rounded-full bg-coral px-6 py-3 text-sm font-semibold uppercase tracking-[0.25em] text-white shadow-md shadow-black/15 hover:bg-coral/90"
                   >
                     <Phone size={18} />
-                    06 68018506 / 05 40753724
+                    05 40753724
                   </a>
 
                 </div>
@@ -273,40 +275,84 @@ export default function Home() {
 
         {/* Presentation section describing the restaurant's heritage */}
         <section id="presentation">
-          <div className="container-wide grid items-start gap-10 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl">Une histoire d’héritage vivant</h2>
-              <p>
-                Le Méditerranéen. Une adresse d’exception à Oran, pensée pour les fines bouches en quête d’une
-                expérience gastronomique unique. Dans un décor à couper le souffle, notre maison — digne héritière du
-                mythique Méditerranéen — vous invite à un voyage culinaire inoubliable.
-              </p>
-              <p>
-                Nous servons avec passion ce que notre belle Méditerranée offre de plus noble : des produits d’une
-                fraîcheur irréprochable, travaillés avec soin, goût et raffinement. Chaque création est sublimée par un
-                zeste d’héritage culinaire algérien, révélant la richesse et l’élégance de nos traditions.
-              </p>
-              <p>
-                Installé dans une somptueuse bâtisse oranaise, Le Méditerranéen se veut plus qu’un restaurant : une
-                célébration de la gastronomie algérienne, qui pour nous n’est pas seulement un art, mais un héritage
-                vivant. Le partager avec vous est notre plus grand honneur.
-              </p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="rounded-2xl bg-white/80 p-6 shadow-card">
-                  <h3 className="text-sm uppercase tracking-[0.25em] text-ocean">Capacité</h3>
-                  <p className="mt-2 text-2xl font-serif">90 couverts</p>
-                  <span className="text-xs text-graphite/70">Deux salons privés inclus</span>
+          <div className="container-wide space-y-12">
+            <div className="grid items-stretch gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+              <div className="flex flex-col justify-between space-y-6">
+                <div>
+                  <h2 className="text-3xl md:text-4xl">Une histoire d’héritage vivant</h2>
+                  <p className="mt-6">
+                    Le Méditerranéen. Une adresse d’exception à Oran, pensée pour les fines bouches en quête d’une
+                    expérience gastronomique unique. Dans un décor à couper le souffle, notre maison — digne héritière du
+                    mythique Méditerranéen — vous invite à un voyage culinaire inoubliable.
+                  </p>
+                  <p className="mt-4">
+                    Nous servons avec passion ce que notre belle Méditerranée offre de plus noble : des produits d’une
+                    fraîcheur irréprochable, travaillés avec soin, goût et raffinement. Chaque création est sublimée par un
+                    zeste d’héritage culinaire algérien, révélant la richesse et l’élégance de nos traditions.
+                  </p>
+                  <p className="mt-4">
+                    Installé dans une somptueuse bâtisse oranaise, Le Méditerranéen se veut plus qu’un restaurant : une
+                    célébration de la gastronomie algérienne, qui pour nous n’est pas seulement un art, mais un héritage
+                    vivant. Le partager avec vous est notre plus grand honneur.
+                  </p>
                 </div>
-                <div className="rounded-2xl bg-white/80 p-6 shadow-card">
-                  <h3 className="text-sm uppercase tracking-[0.25em] text-ocean">Expérience</h3>
-                  <p className="mt-2 text-2xl font-serif">Cuisine signature</p>
-                  <span className="text-xs text-graphite/70">Cheffe de brigade formée à travers la Méditerranée</span>
+                <div className="grid grid-cols-2 gap-4 text-sm">
+                  <div className="rounded-2xl bg-white/80 p-6 shadow-card">
+                    <h3 className="text-sm uppercase tracking-[0.25em] text-ocean">Capacité</h3>
+                    <p className="mt-2 text-2xl font-serif">90 couverts</p>
+                    <span className="text-xs text-graphite/70">Deux salons privés inclus</span>
+                  </div>
+                  <div className="rounded-2xl bg-white/80 p-6 shadow-card">
+                    <h3 className="text-sm uppercase tracking-[0.25em] text-ocean">Expérience</h3>
+                    <p className="mt-2 text-2xl font-serif">Cuisine signature</p>
+                    <span className="text-xs text-graphite/70">Cheffe de brigade formée à travers la Méditerranée</span>
+                  </div>
                 </div>
               </div>
+              <div className="grid-card overflow-hidden">
+                <ClickableImage 
+                  src="/description_picture.jpg" 
+                  alt="Intérieur du Méditerranéen" 
+                  containerClassName="relative h-full min-h-[400px]" 
+                />
+              </div>
             </div>
-            <div className="grid-card overflow-hidden">
-              <div className="relative aspect-[4/5]">
-                <Image src="/interior.jpg" alt="Intérieur du Méditerranéen" fill className="object-cover" />
+
+            <ImageGallery images={[
+              { src: "/IMG_6384.jpg", alt: "Ambiance Méditerranéenne" },
+              { src: "/IMG_6385.jpg", alt: "Détail décor" },
+              { src: "/IMG_6386.jpg", alt: "Lumière d'ambiance" }
+            ]} />
+          </div>
+        </section>
+
+        {/* Experience pillars explaining our service philosophy */}
+        <section id="experience">
+          <div className="container-wide">
+            <div className="max-w-3xl mb-12">
+              <span className="text-xs uppercase tracking-[0.35em] text-ocean">Expérience sur mesure</span>
+              <h2 className="mt-4 text-3xl md:text-4xl">
+                Plus qu’un dîner, un véritable voyage orchestré par la maison
+              </h2>
+            </div>
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
+              <div className="grid-card overflow-hidden">
+                <ClickableImage 
+                  src="/bateau.jpg" 
+                  alt="Bateau Le Méditerranéen" 
+                  containerClassName="relative aspect-[4/5]" 
+                />
+              </div>
+              <div className="grid gap-6">
+                {experiencePillars.map((pillar) => (
+                  <div key={pillar.title} className="grid-card flex flex-col justify-between p-6">
+                    <div>
+                      <h3 className="text-xl font-serif text-ocean">{pillar.title}</h3>
+                      <p className="mt-4 text-sm md:text-base text-graphite/80">{pillar.description}</p>
+                    </div>
+                    <div className="mt-6 h-1 w-16 rounded-full bg-coral/70" />
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -314,7 +360,7 @@ export default function Home() {
 
         {/* Signature specialties section highlighting the paella */}
         <section id="specialites" className="bg-white/70">
-          <div className="container-wide grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="container-wide grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div className="space-y-6">
               <span className="text-xs uppercase tracking-[0.4em] text-ocean">Signature</span>
               <h2 className="text-3xl md:text-4xl">La paella royale</h2>
@@ -357,29 +403,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Experience pillars explaining our service philosophy */}
-        <section id="experience">
-          <div className="container-wide">
-            <div className="max-w-3xl">
-              <span className="text-xs uppercase tracking-[0.35em] text-ocean">Expérience sur mesure</span>
-              <h2 className="mt-4 text-3xl md:text-4xl">
-                Plus qu’un dîner, un véritable voyage orchestré par la maison
-              </h2>
-            </div>
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
-              {experiencePillars.map((pillar) => (
-                <div key={pillar.title} className="grid-card flex flex-col justify-between p-6">
-                  <div>
-                    <h3 className="text-xl font-serif text-ocean">{pillar.title}</h3>
-                    <p className="mt-4 text-sm md:text-base text-graphite/80">{pillar.description}</p>
-                  </div>
-                  <div className="mt-6 h-1 w-16 rounded-full bg-coral/70" />
-                </div>
-              ))}
             </div>
           </div>
         </section>
